@@ -51,8 +51,20 @@
       margin-bottom: 10px;
       position: relative;
     }
-
+    
     .avatar {
+      width: 120px;
+      height: auto;
+      overflow: visible;
+      background: none;
+    }
+    .avatar img {
+      width: 120px;
+      height: auto;
+      object-fit: contain;
+      border-radius: 0; /* removes circle */
+    }
+    /*.avatar {
       width: 104px;
       height: 104px;
       border-radius: 50%;
@@ -64,7 +76,7 @@
       font-size: 38px;
       font-weight: 700;
       color: #fff;
-    }
+    }*/
 
     .open-to-work-badge {
       position: absolute;
@@ -505,16 +517,18 @@
     <div class="profile-banner"></div>
     <div class="profile-header-body">
       <div class="avatar-wrapper">
-        <div class="avatar">JT</div>
-        <span class="open-to-work-badge">Open to Work</span>
+        <div class="avatar">
+          <img src="image_profile.jpg" alt="Joel Talavero">
+        </div>
+        
       </div>
       <h1 class="profile-name">Joel A. Talavero, CPA</h1>
       <p class="profile-headline">
         Finance Manager &amp; FP&amp;A Leader &nbsp;·&nbsp; Group Finance Manager &amp; EXECOM Member
-        &nbsp;·&nbsp; ERP Implementation Manager (Odoo) &nbsp;·&nbsp; MBA-APEX Candidate
+        &nbsp;·&nbsp; ERP Implementation Specialist (Odoo) &nbsp;·&nbsp; MBA-APEX Candidate
       </p>
       <p class="profile-location">
-        📍 Koronadal City, South Cotabato, Philippines &nbsp;·&nbsp; 🌐 Open to Remote / Hybrid Work
+        📍 Koronadal City, South Cotabato, Philippines &nbsp;·&nbsp; 🌐 Open to Remote / Work From Home
       </p>
       <div class="contact-chips">
         <a href="mailto:jatalavero198814@gmail.com" class="chip">
@@ -530,7 +544,8 @@
           LinkedIn Profile
         </a>
       </div>
-
+      <button class="btn-primary">+ Connect</button>
+      <button class="btn-secondary">Message</button>
     </div>
   </div>
 
