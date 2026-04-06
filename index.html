@@ -1,0 +1,1107 @@
+<Resume html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Joel A. Talavero, CPA – Finance Manager | FP&A</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f3f2ef;
+      color: #1a1a1a;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    a { color: #0a66c2; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .page-wrapper {
+      max-width: 860px;
+      margin: 32px auto;
+      padding: 0 16px 60px;
+    }
+
+    /* ── CARD BASE ── */
+    .card {
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
+
+    /* ── HERO / PROFILE HEADER ── */
+    .profile-banner {
+      height: 130px;
+      background: linear-gradient(135deg, #0a66c2 0%, #004182 60%, #00274d 100%);
+    }
+
+    .profile-header-body {
+      padding: 0 28px 24px;
+      position: relative;
+    }
+
+    .avatar-wrapper {
+      display: inline-block;
+      margin-top: -52px;
+      margin-bottom: 10px;
+      position: relative;
+    }
+
+    .avatar {
+      width: 104px;
+      height: 104px;
+      border-radius: 50%;
+      border: 4px solid #ffffff;
+      background: linear-gradient(135deg, #0a66c2, #004182);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 38px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .open-to-work-badge {
+      position: absolute;
+      bottom: 4px;
+      right: -4px;
+      background: #057642;
+      color: #fff;
+      font-size: 9px;
+      font-weight: 600;
+      padding: 3px 7px;
+      border-radius: 20px;
+      border: 2px solid #fff;
+      white-space: nowrap;
+    }
+
+    .profile-name {
+      font-size: 24px;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 4px;
+    }
+
+    .profile-headline {
+      font-size: 14.5px;
+      color: #444;
+      margin-bottom: 10px;
+    }
+
+    .profile-location {
+      font-size: 13px;
+      color: #666;
+      margin-bottom: 12px;
+    }
+
+    .contact-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #eef3fb;
+      border: 1px solid #c4d4e8;
+      border-radius: 20px;
+      padding: 5px 14px;
+      font-size: 13px;
+      color: #0a66c2;
+      font-weight: 500;
+    }
+
+    .chip svg {
+      width: 14px;
+      height: 14px;
+      fill: #0a66c2;
+      flex-shrink: 0;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      background: #0a66c2;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 8px 20px;
+      border-radius: 20px;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .btn-primary:hover { background: #004182; }
+
+    .btn-secondary {
+      display: inline-block;
+      background: #fff;
+      color: #0a66c2;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 7px 20px;
+      border-radius: 20px;
+      border: 1.5px solid #0a66c2;
+      margin-left: 8px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .btn-secondary:hover { background: #eef3fb; }
+
+    /* ── SECTION ── */
+    .section-card { padding: 22px 28px; }
+
+    .section-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #e8e8e8;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section-title svg {
+      width: 20px;
+      height: 20px;
+      fill: #0a66c2;
+      flex-shrink: 0;
+    }
+
+    /* ── ABOUT ── */
+    .about-text {
+      font-size: 14.5px;
+      color: #333;
+      line-height: 1.8;
+    }
+
+    /* ── SKILLS ── */
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .skill-tag {
+      background: #eef3fb;
+      border: 1px solid #c4d4e8;
+      border-radius: 6px;
+      padding: 6px 14px;
+      font-size: 13px;
+      color: #0a66c2;
+      font-weight: 500;
+      transition: all 0.2s;
+      cursor: default;
+    }
+    .skill-tag:hover { background: #0a66c2; color: #fff; }
+
+    /* ── COMPETENCY TABLE ── */
+    .comp-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13.5px;
+    }
+    .comp-table thead tr { background: #0a66c2; color: #fff; }
+    .comp-table thead th {
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 600;
+    }
+    .comp-table tbody tr:nth-child(even) { background: #f9f9f9; }
+    .comp-table tbody tr:hover { background: #eef3fb; }
+    .comp-table tbody td {
+      padding: 9px 14px;
+      color: #333;
+      border-bottom: 1px solid #eee;
+      vertical-align: top;
+    }
+
+    /* ── EXPERIENCE ENTRY ── */
+    .entry {
+      display: flex;
+      gap: 16px;
+      padding: 20px 0;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .entry:last-child { border-bottom: none; padding-bottom: 0; }
+    .entry:first-child { padding-top: 0; }
+
+    .entry-logo {
+      width: 52px;
+      height: 52px;
+      border-radius: 8px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .logo-blue   { background: linear-gradient(135deg, #0a66c2, #004182); }
+    .logo-green  { background: linear-gradient(135deg, #057642, #034d2a); }
+    .logo-orange { background: linear-gradient(135deg, #e67e22, #c0392b); }
+    .logo-purple { background: linear-gradient(135deg, #8e44ad, #6c3483); }
+    .logo-teal   { background: linear-gradient(135deg, #16a085, #0e6655); }
+    .logo-navy   { background: linear-gradient(135deg, #2c3e50, #1a252f); }
+    .logo-gray   { background: linear-gradient(135deg, #7f8c8d, #566573); }
+
+    .entry-body { flex: 1; min-width: 0; }
+
+    .entry-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 2px;
+    }
+
+    .entry-company {
+      font-size: 14px;
+      font-weight: 600;
+      color: #444;
+      margin-bottom: 2px;
+    }
+
+    .entry-meta {
+      font-size: 13px;
+      color: #777;
+      margin-bottom: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      align-items: center;
+    }
+    .dot { color: #bbb; }
+
+    .entry-badge {
+      background: #e8f4ec;
+      color: #057642;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 2px 9px;
+      border-radius: 20px;
+      border: 1px solid #a8d5b5;
+    }
+
+    .entry-desc {
+      font-size: 14px;
+      color: #444;
+      line-height: 1.75;
+    }
+
+    .entry-desc ul {
+      padding-left: 18px;
+      margin-top: 6px;
+    }
+
+    .entry-desc ul li { margin-bottom: 5px; }
+
+    .sub-label {
+      font-weight: 600;
+      color: #0a66c2;
+      margin-top: 12px;
+      margin-bottom: 5px;
+      font-size: 13.5px;
+    }
+
+    /* ── EDUCATION ENTRY ── */
+    .edu-entry {
+      display: flex;
+      gap: 16px;
+      padding: 18px 0;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .edu-entry:last-child { border-bottom: none; padding-bottom: 0; }
+    .edu-entry:first-child { padding-top: 0; }
+
+    .edu-logo {
+      width: 52px;
+      height: 52px;
+      border-radius: 8px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .edu-body { flex: 1; }
+
+    .edu-school {
+      font-size: 15px;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 2px;
+    }
+
+    .edu-degree {
+      font-size: 14px;
+      color: #444;
+      margin-bottom: 2px;
+    }
+
+    .edu-period {
+      font-size: 13px;
+      color: #777;
+      margin-bottom: 6px;
+    }
+
+    .edu-award {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: #fff8e1;
+      border: 1px solid #f9d94e;
+      border-radius: 20px;
+      padding: 3px 12px;
+      font-size: 12px;
+      font-weight: 600;
+      color: #7d6608;
+    }
+
+    .edu-badge-current {
+      display: inline-block;
+      background: #e8f4ec;
+      color: #057642;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 2px 10px;
+      border-radius: 20px;
+      border: 1px solid #a8d5b5;
+      margin-left: 8px;
+    }
+
+    /* ── KEY STRENGTHS ── */
+    .strengths-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 12px;
+    }
+
+    .strength-item {
+      background: #f0f7ff;
+      border-left: 4px solid #0a66c2;
+      border-radius: 6px;
+      padding: 10px 14px;
+      font-size: 13.5px;
+      color: #1a1a1a;
+      font-weight: 500;
+    }
+
+    .strength-item::before {
+      content: "✓ ";
+      color: #057642;
+      font-weight: 700;
+    }
+
+    /* ── LICENSE CARD ── */
+    .license-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 14px 0;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .license-item:last-child { border-bottom: none; padding-bottom: 0; }
+    .license-item:first-child { padding-top: 0; }
+
+    .license-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, #0a66c2, #004182);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .license-icon svg {
+      width: 24px;
+      height: 24px;
+      fill: #fff;
+    }
+
+    .license-name {
+      font-size: 15px;
+      font-weight: 700;
+      color: #1a1a1a;
+    }
+    .license-issuer {
+      font-size: 13px;
+      color: #666;
+    }
+
+    /* ── FOOTER ── */
+    .resume-footer {
+      text-align: center;
+      font-size: 12px;
+      color: #999;
+      margin-top: 24px;
+      line-height: 1.8;
+    }
+
+    /* ── PRINT BUTTON ── */
+    .print-bar {
+      text-align: right;
+      margin-bottom: 12px;
+    }
+    .print-btn {
+      background: #fff;
+      border: 1.5px solid #0a66c2;
+      color: #0a66c2;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 7px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .print-btn:hover { background: #0a66c2; color: #fff; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      .profile-header-body { padding: 0 16px 20px; }
+      .section-card { padding: 18px 16px; }
+      .entry, .edu-entry { flex-direction: column; gap: 10px; }
+      .entry-logo, .edu-logo { width: 44px; height: 44px; }
+      .strengths-grid { grid-template-columns: 1fr; }
+      .comp-table { font-size: 12px; }
+      .comp-table thead th, .comp-table tbody td { padding: 7px 8px; }
+    }
+
+    @media print {
+      body { background: #fff; }
+      .print-bar, .btn-primary, .btn-secondary { display: none; }
+      .card { box-shadow: none; border: 1px solid #eee; }
+      .page-wrapper { margin: 0; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="page-wrapper">
+
+  <!-- PRINT BAR -->
+  <div class="print-bar">
+    <button class="print-btn" onclick="window.print()">🖨 Print / Save as PDF</button>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       PROFILE HEADER
+  ══════════════════════════════════════ -->
+  <div class="card">
+    <div class="profile-banner"></div>
+    <div class="profile-header-body">
+      <div class="avatar-wrapper">
+        <div class="avatar">JT</div>
+        <span class="open-to-work-badge">Open to Work</span>
+      </div>
+      <h1 class="profile-name">Joel A. Talavero, CPA</h1>
+      <p class="profile-headline">
+        Finance Manager &amp; FP&amp;A Leader &nbsp;·&nbsp; Group Finance Manager &amp; EXECOM Member
+        &nbsp;·&nbsp; ERP Implementation Specialist (Odoo) &nbsp;·&nbsp; MBA-APEX Candidate
+      </p>
+      <p class="profile-location">
+        📍 Koronadal City, South Cotabato, Philippines &nbsp;·&nbsp; 🌐 Open to Remote / Work From Home
+      </p>
+      <div class="contact-chips">
+        <a href="mailto:jatalavero198814@gmail.com" class="chip">
+          <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          jatalavero198814@gmail.com
+        </a>
+        <a href="tel:+639293737274" class="chip">
+          <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+          +63 929 3737 274
+        </a>
+        <a href="https://linkedin.com/in/joel-talavero-49253864" target="_blank" class="chip">
+          <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7H10V9h4v1.8A6 6 0 0 1 16 8zM2 9h4v12H2zm2-3a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/></svg>
+          LinkedIn Profile
+        </a>
+      </div>
+      <button class="btn-primary">+ Connect</button>
+      <button class="btn-secondary">Message</button>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       ABOUT
+  ══════════════════════════════════════ -->
+  <div class="card">
+    <div class="section-card">
+      <h2 class="section-title">
+        <svg viewBox="0 0 24 24"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
+        About
+      </h2>
+      <p class="about-text">
+        Results-driven Finance and FP&amp;A professional with <strong>10+ years of progressive experience</strong>
+        in financial planning, budgeting, forecasting, financial modeling, and strategic finance across diversified
+        industries — including retail, banking, real estate, financing, manufacturing, and education.
+      </p>
+      <br>
+      <p class="about-text">
+        Proven track record in leading finance teams, implementing ERP systems, and providing executive-level
+        financial insights to C-suite and board-level stakeholders. As an <strong>EXECOM Member</strong> overseeing
+        nine business units, I combine strong technical modeling skills with commercial acumen and hands-on
+        execution. Currently pursuing an <strong>MBA – Accelerated Program for Executives</strong> at Ateneo de Davao
+        University.
+      </p>
+      <br>
+      <p class="about-text">
+        Core strengths: <strong>Internal Controls · Financial &amp; Operations Analysis · Budgeting &amp; Forecasting ·
+        Risk-Based Auditing · ERP Implementation · Strategic Planning · Multi-Entity Financial Management</strong>
+      </p>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       CORE COMPETENCIES
+  ══════════════════════════════════════ -->
+  <div class="card">
+    <div class="section-card">
+      <h2 class="section-title">
+        <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg>
+        Core Competencies
+      </h2>
+      <table class="comp-table">
+        <thead>
+          <tr>
+            <th>Financial Planning &amp; Analysis</th>
+            <th>Systems &amp; Tools</th>
+            <th>Strategic Finance</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Annual Budgeting &amp; Rolling Forecasts</td>
+            <td>Odoo ERP (Implementation Lead)</td>
+            <td>Board &amp; Executive Reporting</td>
+          </tr>
+          <tr>
+            <td>Integrated 3-Statement Financial Modeling</td>
+            <td>Advanced Excel &amp; Power Query</td>
+            <td>Variance Analysis &amp; Performance Review</td>
+          </tr>
+          <tr>
+            <td>Scenario &amp; Driver-Based Forecasting</td>
+            <td>Salesforce (Familiar)</td>
+            <td>Capital Allocation &amp; Strategic Planning</td>
+          </tr>
+          <tr>
+            <td>Revenue &amp; Expense Monitoring</td>
+            <td>Sage Intacct / Maxio (Adaptable)</td>
+            <td>Business Partnering &amp; Advisory</td>
+          </tr>
+          <tr>
+            <td>Subscription Revenue Metrics (ARR, Churn, NRR)</td>
+            <td>Power BI / Tableau (Adaptable)</td>
+            <td>Private Equity Reporting Support</td>
+          </tr>
+          <tr>
+            <td>Budget vs. Actual Tracking</td>
+            <td>ERP Integration &amp; Data Reconciliation</td>
+            <td>Internal Controls &amp; Governance</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       EXPERIENCE
+  ══════════════════════════════════════ -->
+  <div class="card">
+    <div class="section-card">
+      <h2 class="section-title">
+        <svg viewBox="0 0 24 24"><path d="M20 6h-2.18c.07-.44.18-.88.18-1.36C18 2.99 16.01 1 13.64 1c-1.3 0-2.35.64-3.14 1.5L10 3l-.5-.5C8.71 1.64 7.66 1 6.36 1 3.99 1 2 2.99 2 5.36c0 .49.1.93.18 1.38H0v2h24V6h-4zm-7.19 0c-.63-.63-1.38-1.62-1.38-2.64 0-.73.6-1.36 1.36-1.36.52 0 .97.3 1.21.76l.5.87.5-.87C15.25 2.3 15.7 2 16.22 2c.76 0 1.36.63 1.36 1.36 0 1.02-.75 2.01-1.38 2.64H12.81zM4 20c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10H4v10z"/></svg>
+        Experience
+      </h2>
+
+      <!-- ── ENTRY 1: MUTI Group ── -->
+      <div class="entry">
+        <div class="entry-logo logo-blue">MG</div>
+        <div class="entry-body">
+          <div class="entry-title">Group Manager for Finance | ERP Implementation Manager | EXECOM Member</div>
+          <div class="entry-company">MUTI Group of Companies</div>
+          <div class="entry-meta">
+            <span>Full-time</span><span class="dot">·</span>
+            <span>October 2019 – Present</span><span class="dot">·</span>
+            <span>5+ years</span>
+            <span class="entry-badge">● Current</span>
+          </div>
+          <div class="entry-desc">
+            Senior finance leader and Executive Committee member overseeing financial planning, treasury,
+            regulatory compliance, and digital transformation across <strong>nine (9) diverse business units</strong>
+            spanning Retail, Insurance, Banking &amp; Finance, Real Estate, Micro-Financing, Importation,
+            Construction, and Gasoline &amp; Oil.
+
+            <div class="sub-label">🔹 Financial Planning &amp; Forecasting</div>
+            <ul>
+              <li>Lead the <strong>annual budgeting cycle and rolling forecasts</strong> across all business units, consolidating plans into a unified group-level view for the Board.</li>
+              <li>Build and maintain <strong>integrated financial models</strong> covering the Income Statement, Balance Sheet, and Cash Flow Statement.</li>
+              <li>Develop <strong>scenario models and driver-based forecasting tools</strong> to support executive decision-making under uncertainty.</li>
+              <li>Provide <strong>monthly financial updates</strong> on revenue, headcount, and operating expenses to the EXECOM and Board.</li>
+            </ul>
+
+            <div class="sub-label">🔹 Executive Reporting &amp; Strategic Support</div>
+            <ul>
+              <li>Prepare <strong>monthly and quarterly reporting packages</strong> for senior leadership and board members.</li>
+              <li>Conduct <strong>variance analysis and performance reviews</strong> against approved budgets and forecasts.</li>
+              <li>Provide financial input for <strong>strategic initiatives and capital allocation decisions</strong> across the group.</li>
+              <li>Collaborate with the Board and EXECOM to craft strategic plans and monitor multi-unit performance.</li>
+            </ul>
+
+            <div class="sub-label">🔹 ERP Implementation &amp; Systems Improvement</div>
+            <ul>
+              <li>Led the <strong>end-to-end implementation of Odoo ERP</strong> across all nine business units, driving digital transformation and process standardization.</li>
+              <li>Introduced <strong>automation and process improvements</strong> in financial reporting workflows using Advanced Excel and Power Query.</li>
+              <li>Oversaw system governance and internal controls to improve financial data reliability and integrity.</li>
+            </ul>
+
+            <div class="sub-label">🔹 Business Partnership</div>
+            <ul>
+              <li>Work closely with business unit heads to <strong>align financial plans with operational strategies</strong>.</li>
+              <li>Monitor budget performance and highlight key areas to improve <strong>profitability and operational leverage</strong>.</li>
+              <li>Provide advisory and consultancy services on financial performance and process improvement.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── ENTRY 2: LPU Davao ── -->
+      <div class="entry">
+        <div class="entry-logo logo-green">LP</div>
+        <div class="entry-body">
+          <div class="entry-title">Finance Manager</div>
+          <div class="entry-company">Lyceum of the Philippines University – Davao</div>
+          <div class="entry-meta">
+            <span>Full-time</span><span class="dot">·</span>
+            <span>April 2018 – October 2019</span><span class="dot">·</span>
+            <span>1 yr 7 mos</span>
+          </div>
+                    <div class="entry-desc">
+            <ul>
+              <li>Established and led the <strong>Finance Department from the ground up</strong>, including Accounting, Purchasing, and Treasury functions during the school's critical pre-opening phase.</li>
+              <li>Developed <strong>school fee structures and budget allocations</strong>; managed funding arrangements with banks and sister companies.</li>
+              <li>Led <strong>financial planning and forecasting</strong> to ensure the institution's financial health and sustainability.</li>
+              <li>Served as the <strong>primary financial advisor</strong> to the University President, providing guidance on expenditure prioritization and capital allocation decisions.</li>
+              <li>Managed <strong>construction and project coordination</strong> with engineers, consultants, lead architect, contractors, and suppliers to meet CHED requirements.</li>
+              <li>Oversaw <strong>Bid and Awards</strong> processes, ensuring full transparency and compliance with procurement policies.</li>
+              <li>Successfully contributed to the <strong>on-time opening of LPU Davao in 2019</strong> — turning critical challenges into milestones.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── ENTRY 3: MUTI Accounting Manager ── -->
+      <div class="entry">
+        <div class="entry-logo logo-blue">MG</div>
+        <div class="entry-body">
+          <div class="entry-title">Accounting Manager – Shared Services Group</div>
+          <div class="entry-company">MUTI Group of Companies</div>
+          <div class="entry-meta">
+            <span>Full-time</span><span class="dot">·</span>
+            <span>June 2016 – April 2018</span><span class="dot">·</span>
+            <span>1 yr 11 mos</span>
+          </div>
+          <div class="entry-desc">
+            Managed the Accounting Department within the Shared Services Group, supporting
+            <strong>10 distinct business units</strong> across: Retail – Parts &amp; Motorcycle, Insurance,
+            Banking &amp; Finance, Real Estate – Housing, Real Estate – Memorial Lots, Micro-Financing,
+            Importation &amp; Construction, and Gasoline &amp; Oil.
+            <ul>
+              <li>Collaborated with the Systems &amp; Analysis team to <strong>implement accounting systems</strong> and generate actionable financial reports.</li>
+              <li>Developed and refined <strong>policies and procedures</strong> to streamline operations and enhance financial controls across all business units.</li>
+              <li>Provided <strong>consultancy and advisory services</strong> to operational groups on financial performance and compliance matters.</li>
+              <li>Supported financial performance tracking, <strong>budget monitoring</strong>, and management reporting across the group.</li>
+              <li>Actively supported the Controller in overseeing project implementations across different complexities to drive operational efficiency.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── ENTRY 4: Alliance Select Foods ── -->
+      <div class="entry">
+        <div class="entry-logo logo-orange">AF</div>
+        <div class="entry-body">
+          <div class="entry-title">Audit Supervisor</div>
+          <div class="entry-company">Alliance Select Foods International Inc.</div>
+          <div class="entry-meta">
+            <span>Full-time</span><span class="dot">·</span>
+            <span>March 2013 – June 2016</span><span class="dot">·</span>
+            <span>3 yrs 4 mos</span>
+          </div>
+          <div class="entry-desc">
+            <ul>
+              <li>Conducted audits of <strong>Foreign Business Units</strong> including PT International Alliance Foods Indonesia, Manufacturing Plants, Big Glory Bay, FDCP Inc., and the Head Office.</li>
+              <li>Oversaw and led <strong>audit projects</strong> end-to-end, ensuring smooth execution and timely delivery of audit reports.</li>
+              <li>Kept the <strong>Audit Committee updated</strong> on Internal Controls, Independence of Internal Audit, and the progress of the Audit Plan, findings, and recommendations.</li>
+              <li>Served as <strong>Acting Accountant</strong> at Alliance MHI Properties — led the Finance Group, prepared Financial Statements, and ensured full BIR compliance.</li>
+              <li>Provided comprehensive support during <strong>Financial Statement Audits</strong>:
+                <ul style="margin-top:5px;">
+                  <li>Assisted in Financial Statement Consolidation</li>
+                  <li>Reviewed Financial Statements, Notes, and Disclosures</li>
+                  <li>Collaborated with External Auditors</li>
+                  <li>Reviewed BIR Compliance</li>
+                </ul>
+              </li>
+              <li>Drove <strong>efficiency and process alignment</strong> across operations of varying complexity in support of the Controller.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── ENTRY 5: Manila Jockey Club ── -->
+      <div class="entry">
+        <div class="entry-logo logo-purple">MJ</div>
+        <div class="entry-body">
+          <div class="entry-title">Audit Associate</div>
+          <div class="entry-company">Manila Jockey Club, Inc. (MJCI)</div>
+          <div class="entry-meta">
+            <span>Full-time</span><span class="dot">·</span>
+            <span>February 2012 – February 2013</span><span class="dot">·</span>
+            <span>1 yr</span>
+          </div>
+          <div class="entry-desc">
+            Played a vital role in Real Estate Accounting Operations during a critical staffing transition period.
+            <ul>
+              <li>Assisted the accounting division in accurately <strong>recording Real Estate Transactions</strong>.</li>
+              <li>Calculated <strong>VAT Payable and Taxable Income</strong> for Real Estate operations.</li>
+              <li>Monitored <strong>collections from real estate buyers</strong> and Joint Venture Partners' remittances.</li>
+              <li>Oversaw collections from <strong>retail property tenants</strong>.</li>
+              <li>Handled computation and recording of <strong>Dividend and Rent Income</strong> from Joint Venture Partners.</li>
+              <li>Provided <strong>special analytical support</strong> to the Chief Operating Officer on operational segment analysis.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── ENTRY 6: Century Pacific Group ── -->
+      <div class="entry">
+        <div class="entry-logo logo-teal">CP</div>
+        <div class="entry-body">
+          <div class="entry-title">Junior Auditor</div>
+          <div class="entry-company">Century Pacific Group</div>
+          <div class="entry-meta">
+            <span>Full-time</span><span class="dot">·</span>
+            <span>May 2011 – December 2011</span><span class="dot">·</span>
+            <span>8 mos</span>
+          </div>
+          <div class="entry-desc">
+            As a member of the audit team, reviewed and assessed key business processes to add value and
+            strengthen internal controls.
+            <div class="sub-label">🔹 Business Cycles Reviewed</div>
+            <ul>
+              <li>Order to Collect &amp; Revenue Cycle</li>
+              <li>Purchase to Pay Cycle</li>
+              <li>Inventory and Warehousing Operations</li>
+              <li>Fixed Asset Management</li>
+              <li>Payroll</li>
+              <li>Sales and Marketing Operations</li>
+              <li>Production Operations</li>
+            </ul>
+            <div class="sub-label">🔹 Key Contributions</div>
+            <ul>
+              <li>Conducted a comprehensive <strong>Fraud Audit</strong> — created the Audit Plan, carried out audit procedures, and produced the final Audit Report.</li>
+              <li>Provided <strong>expert guidance and advisory services</strong> to operations outside the formal audit scope.</li>
+              <li>Helped establish <strong>efficient and effective internal controls</strong> across reviewed business cycles.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── ENTRY 7: Part-Time Instructor ── -->
+      <div class="entry">
+        <div class="entry-logo logo-navy">SM</div>
+        <div class="entry-body">
+          <div class="entry-title">Part-Time Instructor – School of Accountancy</div>
+          <div class="entry-company">Saint Mary's University – Bayombong</div>
+          <div class="entry-meta">
+            <span>Part-time</span><span class="dot">·</span>
+            <span>November 2010 – April 2011</span><span class="dot">·</span>
+            <span>6 mos</span>
+          </div>
+          <div class="entry-desc">
+            Taught the following subjects to undergraduate accountancy students:
+            <ul>
+              <li>Income Taxation</li>
+              <li>Partnership and Corporation</li>
+              <li>Advanced Accounting Part III</li>
+              <li>Review of Audit Problems and Theory of Accounts <em>(for graduating class)</em></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end section-card -->
+  </div><!-- end experience card -->
+
+  <!-- ══════════════════════════════════════
+       EDUCATION
+  ══════════════════════════════════════ -->
+  <div class="card">
+    <div class="section-card">
+      <h2 class="section-title">
+        <svg viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+        Education
+      </h2>
+
+      <!-- MBA -->
+      <div class="edu-entry">
+        <div class="edu-logo logo-blue" style="font-size:13px; text-align:center; line-height:1.2; padding:4px;">ADDU</div>
+        <div class="edu-body">
+          <div class="edu-school">
+            Ateneo de Davao University
+            <span class="edu-badge-current">● Currently Enrolled</span>
+          </div>
+          <div class="edu-degree">
+            Master in Business Administration – Accelerated Program for Executives (MBA-APEX)
+          </div>
+          <div class="edu-period">SY 2023 – Present &nbsp;·&nbsp; 2nd Year Level</div>
+          <span class="edu-award">🎓 Executive MBA Candidate</span>
+        </div>
+      </div>
+
+      <!-- BSA -->
+      <div class="edu-entry">
+        <div class="edu-logo logo-green" style="font-size:13px; text-align:center; line-height:1.2; padding:4px;">SMU</div>
+        <div class="edu-body">
+          <div class="edu-school">Saint Mary's University – Bayombong</div>
+          <div class="edu-degree">Bachelor of Science in Accountancy</div>
+          <div class="edu-period">SY 2005 – 2010</div>
+          <span class="edu-award">🏅 Consistent Dean's Lister</span>
+        </div>
+      </div>
+
+      <!-- High School -->
+      <div class="edu-entry">
+        <div class="edu-logo logo-orange" style="font-size:12px; text-align:center; line-height:1.2; padding:4px;">ACSH</div>
+        <div class="edu-body">
+          <div class="edu-school">Aldersgate College Science High School</div>
+          <div class="edu-degree">Secondary Education</div>
+          <div class="edu-period">SY 2001 – 2005</div>
+          <span class="edu-award">🏅 With Honor</span>
+        </div>
+      </div>
+
+      <!-- Elementary -->
+      <div class="edu-entry">
+        <div class="edu-logo logo-gray" style="font-size:12px; text-align:center; line-height:1.2; padding:4px;">DES</div>
+        <div class="edu-body">
+          <div class="edu-school">Darubba Elementary School</div>
+          <div class="edu-degree">Primary Education</div>
+          <div class="edu-period">SY 1995 – 2001</div>
+          <span class="edu-award">🏅 With Honor</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       LICENSES & CERTIFICATIONS
+  ══════════════════════════════════════ -->
+  <div class="card">
+    <div class="section-card">
+      <h2 class="section-title">
+        <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-1 14l-3-3 1.41-1.41L11 12.17l4.59-4.58L17 9l-6 6z"/></svg>
+        Licenses &amp; Certifications
+      </h2>
+
+      <div class="license-item">
+        <div class="license-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-1 14l-3-3 1.41-1.41L11 12.17l4.59-4.58L17 9l-6 6z"/></svg>
+        </div>
+        <div>
+          <div class="license-name">Certified Public Accountant (CPA)</div>
+          <div class="license-issuer">Professional Regulation Commission – Philippines &nbsp;·&nbsp; Board Passer</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       SKILLS
+  ══════════════════════════════════════ -->
+  <div class="card">
+    <div class="section-card">
+      <h2 class="section-title">
+        <svg viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
+        Skills &amp; Technologies
+      </h2>
+      <div class="skills-grid">
+        <span class="skill-tag">Financial Planning &amp; Analysis (FP&amp;A)</span>
+        <span class="skill-tag">Annual Budgeting &amp; Rolling Forecasts</span>
+        <span class="skill-tag">3-Statement Financial Modeling</span>
+        <span class="skill-tag">Scenario &amp; Driver-Based Forecasting</span>
+        <span class="skill-tag">Variance Analysis</span>
+        <span class="skill-tag">SaaS Metrics (ARR, NRR, Churn, Retention)</span>
+        <span class="skill-tag">Advanced Excel</span>
+        <span class="skill-tag">Power Query</span>
+        <span class="skill-tag">Odoo ERP</span>
+        <span class="skill-tag">Sage Intacct</span>
+        <span class="skill-tag">Maxio</span>
+        <span class="skill-tag">Salesforce</span>
+        <span class="skill-tag">Power BI</span>
+        <span class="skill-tag">Tableau</span>
+        <span class="skill-tag">Board &amp; Executive Reporting</span>
+        <span class="skill-tag">ERP Implementation</span>
+        <span class="skill-tag">Internal Controls</span>
+        <span class="skill-tag">Risk-Based Auditing</span>
+        <span class="skill-tag">Financial Statement Consolidation</span>
+        <span class="skill-tag">Treasury Management</span>
+        <span class="skill-tag">Capital Allocation</span>
+        <span class="skill-tag">Strategic Planning</span>
+        <span class="skill-tag">Business Partnership</span>
+        <span class="skill-tag">Multi-Entity Finance Management</span>
+        <span class="skill-tag">BIR Compliance</span>
+        <span class="skill-tag">Project Management</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       KEY STRENGTHS FOR THIS ROLE
+  ══════════════════════════════════════ -->
+  <div class="card">
+    <div class="section-card">
+      <h2 class="section-title">
+        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+        Why I'm the Right Fit — Key Strengths for This Role
+      </h2>
+      <div class="strengths-grid">
+        <div class="strength-item">Built and managed financial models &amp; budgeting processes across 9+ business units</div>
+        <div class="strength-item">Led full annual budgeting and rolling forecast cycles</div>
+        <div class="strength-item">Experienced in board-level and executive financial reporting</div>
+        <div class="strength-item">Proven ERP implementation leader — Odoo across multi-entity operations</div>
+        <div class="strength-item">Strong foundation in financial systems integration and data reconciliation</div>
+        <div class="strength-item">Combines strategic thinking with hands-on financial execution</div>
+        <div class="strength-item">Comfortable working independently in high-accountability environments</div>
+        <div class="strength-item">Advanced Excel, Power Query, and financial dashboard expertise</div>
+        <div class="strength-item">10+ years of progressive finance leadership across diverse industries</div>
+        <div class="strength-item">Currently pursuing MBA-APEX — committed to executive-level development</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <div class="resume-footer">
+    <p>📄 Resume of <strong>Joel A. Talavero, CPA</strong> &nbsp;·&nbsp; Finance Manager &amp; FP&amp;A Leader</p>
+    <p style="margin-top:4px;">
+      📧 jatalavero198814@gmail.com &nbsp;·&nbsp;
+      📱 +63 929 3737 274 &nbsp;·&nbsp;
+      🔗 <a href="https://linkedin.com/in/joel-talavero-49253864" target="_blank">linkedin.com/in/joel-talavero-49253864</a>
+    </p>
+    <p style="margin-top:8px; font-size:11px; color:#bbb;">
+      Generated for: Finance Manager – FP&amp;A | UpStaff Inc. &nbsp;·&nbsp; April 2026
+    </p>
+  </div>
+
+</div><!-- end page-wrapper -->
+
+<style>
+  /* ── EDU ENTRY STYLES (self-contained here for the continuation) ── */
+  .edu-entry {
+    display: flex;
+    gap: 16px;
+    padding: 18px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .edu-entry:last-child { border-bottom: none; padding-bottom: 0; }
+  .edu-entry:first-child { padding-top: 0; }
+  .edu-logo {
+    width: 52px;
+    height: 52px;
+    border-radius: 8px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+  }
+  .edu-body { flex: 1; }
+  .edu-school {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 2px;
+  }
+  .edu-degree {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 2px;
+  }
+  .edu-period {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 6px;
+  }
+  .edu-award {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: #fff8e1;
+    border: 1px solid #f9d94e;
+    border-radius: 20px;
+    padding: 3px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #7d6608;
+  }
+  .edu-badge-current {
+    display: inline-block;
+    background: #e8f4ec;
+    color: #057642;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 2px 10px;
+    border-radius: 20px;
+    border: 1px solid #a8d5b5;
+    margin-left: 8px;
+  }
+  .license-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .license-item:last-child { border-bottom: none; padding-bottom: 0; }
+  .license-item:first-child { padding-top: 0; }
+  .license-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #0a66c2, #004182);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .license-icon svg { width: 24px; height: 24px; fill: #fff; }
+  .license-name { font-size: 15px; font-weight: 700; color: #1a1a1a; }
+  .license-issuer { font-size: 13px; color: #666; }
+  @media (max-width: 600px) {
+    .edu-entry { flex-direction: column; gap: 10px; }
+    .edu-logo { width: 44px; height: 44px; }
+  }
+</style>
+
+</body>
+</html>
